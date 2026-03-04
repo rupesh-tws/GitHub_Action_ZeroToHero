@@ -1,0 +1,16 @@
+name: Hellow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hellow
+        run: echo "Heloow dosto" 
+
+      - name: say hellow to username
+        run: echo "hellow $USER"
