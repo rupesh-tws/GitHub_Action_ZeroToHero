@@ -27,6 +27,8 @@ jobs:
             # Static code artifacys
                  - name: Upload Static files
                    uses: action/upload-pages-artifact@v4
+                   with:
+                    path: "."
 
 
                  - name: Deploye to GitHib Page
