@@ -1,0 +1,34 @@
+name: PortFolio
+
+on:
+  push:
+      branches: [main]
+
+permissions:
+  pages: write
+  id-token: write
+      
+jobs:
+    deployed:
+            runs-on: ubuntu-latest
+
+            environment:
+                 name: github-pages 
+                 url: ${{ steps.deployment.outputs.page_url }}
+            steps:
+  # get access to your portfolio code via p-build action
+                 - name: CheckOut Code
+                   uses: actions/checkout@v4
+- 
+            # Setup GitHub page
+                 - name: Setup GitHub Page
+                   uses: actions/configure-page@v4
+
+
+            # Static code artifacys
+                 - name: Upload Static files
+                   uses: action/upload-pages-artifact@v4
+
+
+                 - name: Deploye to GitHib Page
+                   uses: actions/deploy-pages@v4
