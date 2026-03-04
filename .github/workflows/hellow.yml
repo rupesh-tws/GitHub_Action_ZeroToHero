@@ -14,3 +14,9 @@ jobs:
 
       - name: say hellow to username
         run: echo "hellow $USER"
+
+    details:
+      runs-on: ubuntu-latest
+      steps:
+        - name: : show what is the version of Python and Docker
+          run: docker --version && python --version
