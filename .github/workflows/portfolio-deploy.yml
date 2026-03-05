@@ -21,14 +21,14 @@ jobs:
                    uses: actions/checkout@v4
             # Setup GitHub page
                  - name: Setup GitHub Page
-                   uses: actions/configure-page@v4
+                   uses: actions/configure-pages@v4
 
 
             # Static code artifacys
                  - name: Upload Static files
                    uses: actions/upload-pages-artifact@v4
                    with:
-                     path: "."
+                    path: ./index.html
 
                  - name: Deploye to GitHib Page
                    uses: actions/deploy-pages@v4
