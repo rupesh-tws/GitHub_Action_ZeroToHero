@@ -28,7 +28,7 @@ jobs:
                  - name: Upload Static files
                    uses: actions/upload-pages-artifact@v4
                    with:
-                     path: "../../index.html"
+                     path: "."
 
                  - name: Deploye to GitHib Page
                    uses: actions/deploy-pages@v4
