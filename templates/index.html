@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupesh Khurpe | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        body {
+            background: linear-gradient(270deg,#0f2027,#203a43,#2c5364);
+            background-size: 600% 600%;
+            animation: gradientBG 12s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+            header h1 {
+                font-size: 60px;
+                font-weight: 700;
+                animation: fadeIn 2s ease;
+            }
+
+            header p {
+                font-size: 20px;
+                opacity: 0.8;
+                margin-top: 10px;
+            }
+
+        .btn {
+            margin-top: 30px;
+            padding: 12px 30px;
+            border-radius: 30px;
+            background: #00c6ff;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+            .btn:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+            }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 40px;
+            border-left: 5px solid #00c6ff;
+            padding-left: 15px;
+        }
+
+        .about {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 30px;
+        }
+
+        .skill {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+            .skill:hover {
+                transform: translateY(-10px);
+            }
+
+        .progress {
+            height: 8px;
+            background: #333;
+            border-radius: 5px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+            .progress span {
+                display: block;
+                height: 100%;
+                background: #00c6ff;
+                animation: progress 2s ease;
+            }
+
+        @keyframes progress {
+            0% {
+                width: 0;
+            }
+        }
+
+        .timeline {
+            border-left: 3px solid #00c6ff;
+            padding-left: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Rupesh Khurpe</h1>
+        <p>Software Developer | Problem Solver | Tech Enthusiast</p>
+
+        <a href="#" class="btn">View LinkedIn</a>
+
+    </header>
+
+    <section>
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+
+            <p>
+                Passionate developer focused on creating modern web applications and solving
+                real-world problems with technology. Skilled in building responsive websites,
+                working with modern programming languages, and continuously learning new
+                technologies.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                HTML
+                <div class="progress"><span style="width:95%"></span></div>
+            </div>
+
+            <div class="skill">
+                CSS
+                <div class="progress"><span style="width:90%"></span></div>
+            </div>
+
+            <div class="skill">
+                JavaScript
+                <div class="progress"><span style="width:80%"></span></div>
+            </div>
+
+            <div class="skill">
+                Web Development
+                <div class="progress"><span style="width:85%"></span></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>Software Developer</h3>
+                <p>Worked on building web applications and improving UI performance.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Web Development Projects</h3>
+                <p>Developed responsive websites and modern UI designs.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Rupesh Khurpe | Portfolio Website</p>
+
+    </footer>
+
+</body>
+</html>
